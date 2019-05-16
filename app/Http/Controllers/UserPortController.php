@@ -47,7 +47,7 @@ class UserPortController extends Controller
             'user_name'=>$name
         ];
         $res=Zcc::where($where1)->first();
-        dd($res);
+  
         $pwds=$res->password;
         if($res){
             $new_data= base64_decode($pwds);
