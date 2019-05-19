@@ -145,10 +145,7 @@ class AlipayController extends Controller
         $p = json_encode($_POST);
         $log_str = "\n>>>>>> " .date('Y-m-d H:i:s') . ' '.$p . " \n";
         file_put_contents('logs/alipay_notify.log',$log_str,FILE_APPEND);
-
-        $c = json_decode($p);
-        echo $c->name;
-//        echo 'success';
+        echo 'success';
         //TODO 验签 更新订单状态
 
     }
