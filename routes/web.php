@@ -20,3 +20,32 @@ Route::post('userindex','UserPortController@index');
 //登录
 Route::post('useradd','UserPortController@useradd');
 
+Route::post('goodslist','GoodsController@goodsList');
+
+Route::post('partigoods','GoodsController@partiGoods');
+
+
+Route::post('addcart','GoodsController@addcart');
+
+Route::post('cartlist','GoodsController@cartlist');
+
+Route::post('cartdd','GoodsController@cartdd');
+
+Route::post('orderlist','GoodsController@orderlist');
+
+
+
+//阿里
+Route::get('pay','AlipayController@pay');
+
+Route::get('notify','AlipayController@notify');
+
+Route::get('aliReturn','AlipayController@aliReturn');
+
+//作废///////////////////////////////////////////////
+Route::post('alipays','GoodsController@alipays');////
+                                                 ///
+Route::post('jk','GoodsController@jk');          ///
+///////////////////////////////////////////////////
+
+

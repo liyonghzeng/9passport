@@ -4,10 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Zcc extends Model
+class Xq extends Model
 {
-    //
-    public  $table = 'zcc';
+    public  $table = 'xq';
     public  $timestamps = false;
-
 }
