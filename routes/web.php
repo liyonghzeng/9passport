@@ -38,7 +38,7 @@ Route::post('orderlist','GoodsController@orderlist');
 //阿里
 Route::get('pay','AlipayController@pay');
 
-Route::get('notify','AlipayController@notify');
+Route::post('notify','AlipayController@notify');
 
 Route::get('aliReturn','AlipayController@aliReturn');
 
