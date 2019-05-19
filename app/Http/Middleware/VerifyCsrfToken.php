@@ -29,6 +29,7 @@ class VerifyCsrfToken extends Middleware
         'orderlist',
         'alipays',
         'jk',
+        'notify'
 //        'pay'
     ];
 }
